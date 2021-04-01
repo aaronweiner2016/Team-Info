@@ -9,7 +9,6 @@ const Manager = require("./lib/Manager");
 
 
 
-const team = [];
 
 // TODO: Create an array of questions for user input
 const managerQuestions = [
@@ -81,6 +80,8 @@ const engineerQuestions = [
         name: "github"
     }
 ]
+
+const team = [];
 
 function addEngineer() {
     inquirer.prompt(engineerQuestions).then(answers => {
